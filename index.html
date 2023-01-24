@@ -1,0 +1,232 @@
+<!-- Justin Koch -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Koch Profile</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&family=Courgette&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="list nav__list">
+        <li class="list__item list__item--nav"><a href="#about">About</a></li>
+        <li class="list__item list__item--nav"><a href="#projects">Projects</a></li>
+        <li class="list__item list__item--nav"><a href="#work-experience">Work Experience</a></li>
+        <li class="list__item list__item--nav"><a href="#ambition">Ambition</a></li>
+        <li class="list__item list__item--nav"><a href="#contact">Contact</a></li>
+      </ul> <!-- nav__list -->
+    </nav> <!-- nav -->
+  </header>
+
+  <section id="intro">
+    <h2 class="section__header--intro">Hi, my name is:</h2>
+    <div class="picture-of-me--wrapper">
+      <img src="./assets/images/me-rev-1.jpg" alt="" class="picture-of-me">
+    </div>
+    <div class="abstract-box"></div>
+    <div class="left-notch"></div>
+    <div class="right-notch"></div>
+    <p class="section__sub-header section__sub-header--intro">Justin Koch</p>
+    <p class="accent-info accent-info--header">Software Engineer in training</p>
+  </section> <!-- intro -->
+
+  <section id="about">
+    <h2 class="section__header section__header--about">About Me</h2>
+
+    <div class="about__info-cluster">
+      <p class="light-title info-cluster__title">Quick Info</p>
+      <ul class="list info-cluster__list">
+        <li class="list__item info-cluster__item"><strong class="light-accent-color">Age:</strong> 18</li>
+        <li class="list__item info-cluster__item"><strong class="light-accent-color">Location:</strong>
+          Harrisburg,
+          Pennsylvania</li>
+        <li class="list__item info-cluster__item"><strong class="light-accent-color">Degree:</strong>
+          <em>Working on A.S. for Computer
+            Software
+            Engineering<br> from Thaddeus Stevens College of Technology</em>
+        </li>
+        <li class="list__item info-cluster__item"><strong class="light-accent-color">Github:</strong> <a
+            href="https://github.com/code12x" class="link-icon" target="_blank">Code12x</a>
+        </li>
+        <li class="list__item info-cluster__item">
+          <strong class="light-accent-color">Resume:</strong> <a href="./assets/JustinKoch-Resume.pdf"
+            target="_blank">JustinKoch-Resume.pdf</a>
+        </li>
+      </ul> <!-- info-cluster__list -->
+    </div> <!-- about__info-cluster -->
+
+    <div class="about__info">
+      <div class="quote-wrapper">
+        <div class="abstract-circle abstract-circle-1"></div>
+        <div class="abstract-circle abstract-circle-2"></div>
+        <div class="abstract-circle abstract-circle-3"></div>
+        <p class="my-fancy-quote my-fancy-quote--pt-1">I want to help people become more
+          <strong>efficient</strong> at
+          what
+          they do
+          by
+          creating
+        </p>
+        <p class="my-fancy-quote my-fancy-quote--pt-2"><strong>effective</strong>
+          solutions
+          to their problems
+          with my programs.</p>
+      </div>
+      <p class="info__title">Activites & Interests</p>
+      <ul class="list info__list">
+        <li class="list__item list__item--info">Learning new things</li>
+        <li class="list__item list__item--info">Back end development</li>
+        <li class="list__item list__item--info">Learning new programming languages (currently learning Rust)
+        </li>
+        <li class="list__item list__item--info">Open-source community</li>
+        <li class="list__item list__item--info">Linux (I use Pop!_OS btw)</li>
+        <li class="list__item list__item--info">Technical Minecraft</li>
+        <li class="list__item list__item--info">The outdoors (hunting, trapping, four-wheeling, horse
+          riding,
+          hiking,
+          etc.)</li>
+        <li class="list__item list__item--info">Recreational shooting</li>
+        <li class="list__item list__item--info">Aviation!</li>
+      </ul> <!-- info__list -->
+    </div> <!-- about__info -->
+  </section> <!-- about -->
+
+  <section id="projects">
+    <h2 class="section__header section__header--projects">Projects</h2>
+    <div class="projects__list--wrapper">
+      <ul class="list projects__list">
+        <a href="https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/" target="_blank"
+          class="list__item list__item--project">
+          <li>
+            <img src="./assets/images/worldtp_showcase.jpg" alt="WorldTP Showcase">
+            <p class="light-title project__title">WorldTP</p>
+            <p class="project__content">Status: Complete/updating</p>
+            <p class="project__content">Language: Java</p>
+            <p class="project__content">About:</p>
+            <ul class="t2-list list__list">
+              <li class="list__item t2-item">Minecraft Spigot server plugin that adds a GUI layer to
+                another
+                plugin.</li>
+              <li class="list__item t2-item">Customizable plugin that is meant for any user
+                to
+                understand.</li>
+            </ul> <!-- list__list -->
+          </li> <!-- flex-aligner -->
+        </a> <!-- list__item--project -->
+
+        <span class="list__item list__item--project">
+          <li>
+            <!-- flex-aligner -->
+            <img src="./assets/images/bloodhound.png" alt="Bloodhound">
+            <p class="light-title project__title">Bloodhound</p>
+            <p>Status: Incomplete/not finishing</p>
+            <p>Language: Golang</p>
+            <p>About:</p>
+            <ul class="t2-list list__list">
+              <li class="list__item t2-item">
+                <p>A project that I did to learn more about the backend of web applications in a fun and
+                  creative way.</p>
+              </li> <!-- list__item -->
+              <li class="list__item t2-item">
+                <p>A collection of programs to find the IP of a certain player's Minecraft server.</p>
+              </li> <!-- list__item -->
+            </ul> <!-- list__list -->
+          </li> <!-- flex-aligner -->
+        </span> <!-- list__item--project -->
+      </ul> <!-- projects__list -->
+    </div> <!-- projects__list--wrapper -->
+  </section> <!-- projects -->
+
+  <section id="work-experience">
+    <h2 class="section__header section__header--work-experience">Work Experience</h2>
+    <div class="blob-wrapper blob-wrapper--work-experience">
+      <div class="blob blob__work-experience blob__work-experience--wtr">
+        <h3 class="blob__title blob__title--wtr">Warren's Truck Repair</h3>
+        <div class="blob__msg blob__msg--wtr">
+          <p>Location: Dauphin, PA</p>
+          <p>2018 - Present</p>
+          <ul>
+            <li class="list__item">I learned from my grandfather and dad much of the diesel mechanic trade.
+            </li>
+            <li class="list__item">I helped wherever I could, learning many new things along the way.</li>
+            <ul class="list__item">
+              <li class="list__item">I serviced trucks.</li>
+              <li class="list__item">I helped rebuild engines.</li>
+              <li class="list__item">I helped restore an entire truck.</li>
+              <li class="list__item">I'm currently working on a basic website for the business.</li>
+            </ul>
+          </ul>
+        </div> <!-- blob__msg--wtr -->
+      </div> <!-- blob--work-experience -->
+    </div> <!-- blob-wrapper--work-experience -->
+  </section> <!-- work-experience -->
+
+  <section id="ambition">
+    <h2 class="section__header section__header--ambition">Ambition</h2>
+    <div class="blob-wrapper blob-wrapper--ambition">
+      <div class="blob blob__ambition">
+        <h3 class="blob__title blob__title--ambition">To become a backend web developer</h3>
+        <div class="blob__msg blob__msg--backend-dev">
+          <p>Backend projects light me up with excitement as I try to solve problems in new ways.</p>
+        </div> <!-- blob__msg--backend -->
+      </div> <!-- blob--ambition -->
+
+      <div class="blob blob__ambition">
+        <h3 class="blob__title blob__title--ambition">To become an application developer</h3>
+        <div class="blob__msg blob__msg--sys-dev">
+          <p>In more recent times, I've been increasingly interested in application development. More specifically, the
+            backend of applicaitons (e.g., server software).</p>
+        </div> <!-- blob__msg--sys-dev -->
+      </div> <!-- blob--ambition -->
+
+      <div class="blob blob__ambition">
+        <h3 class="blob__title blob__title--ambition">Really anything but front end development 😆</h3>
+        <div class="blob__msg blob__msg--sys-dev">
+          <p>Front end development, though really neat and important, is not where I perform best. I work best
+            on logic oriented problems instead of design oriented problems.</p>
+        </div> <!-- blob__msg--application-dev -->
+      </div> <!-- blob--ambition -->
+    </div> <!-- blob-wrapper--ambition -->
+  </section> <!-- ambition -->
+
+  <section id="contact">
+    <h2 class="section__header section__header--contact">Contact</h2>
+    <div class="blob blob--contact">
+      <p>Email: <a href="mailto:jdkoch2855+profilewebsite@gmail.com">jdkoch2855@gmail.com</a></p>
+      <p>Github: <a href="https://github.com/code12x" target="_blank">Code12x</a></p>
+      <p>Discord: Code12#4775</p>
+    </div>
+  </section> <!-- contact -->
+
+  <footer>
+    <div class="footer-top">
+      <a href="mailto:jdkoch2855+profilewebsite@gmail.com">jdkoch2855@gmail.com</a>
+
+
+      <a href="https://github.com/code12x" target="_blank">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="small-icon">
+          <title>GitHub</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
+      </a>
+    </div>
+
+    <p class="copywrite">Copyright &copy;Justin Koch 2022</p>
+
+  </footer>
+</body>
+
+</html>
