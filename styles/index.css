@@ -8,11 +8,11 @@
 }
 
 :root {
-    --dark-color: #33302f;
-    --light-color: #b8eeee;
-    --accent-color-1: mediumseagreen;
-    --accent-color-2: blanchedalmond;
-    --accent-color-3: lightsteelblue;
+    --dark-color: #243E36;
+    --light-color: #F1F7ED;
+    --accent-color-1: #7CA982;
+    --accent-color-2: #E0EEC6;
+    --accent-color-3: #C2A83E;
     --indent-size: 20px;
 }
 
@@ -56,7 +56,7 @@ body {
     display: block;
     margin: auto;
     width: 30%;
-    border-bottom: 2px solid var(--accent-color-1);
+    border-bottom: 2px solid var(--accent-color-3);
 }
 
 /****** section ******/
@@ -102,6 +102,8 @@ section {
     box-shadow: 0 0 5px black;
     padding: 5px;
     margin: 10px;
+    background-color: var(--light-color);
+    color: var(--dark-color)
 }
 
 .blob__title {
@@ -114,7 +116,7 @@ section {
     margin: 0 auto 10px;
     display: block;
     width: 50%;
-    border-bottom: 1px solid var(--accent-color-2);
+    border-bottom: 1px solid var(--accent-color-3);
 }
 
 /* =============== specific =============== */
@@ -233,7 +235,7 @@ header {
     content: " ";
     display: block;
     width: 100px;
-    border-bottom: 1px solid var(--accent-color-1);
+    border-bottom: 1px solid var(--accent-color-3);
     margin-bottom: 10px;
 }
 
@@ -351,21 +353,13 @@ header {
     text-align: center;
 }
 
-/****** work-experience ******/
-#work-experience {
-    background-image: linear-gradient(rgba(51, 48, 47, 0.4), rgba(51, 48, 47, 0.4)), url(../assets/images/KIMG2866.JPG);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.blob__work-experience {
-    background-color: var(--dark-color);
-    width: 23%;
-}
-
 /****** ambition ******/
+#ambition {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/20220511_135813.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .blob__ambition {
     width: 31%;
 }
