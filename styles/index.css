@@ -124,16 +124,24 @@ section {
 /****** header ******/
 header {
     border-bottom: 2px var(--light-color) solid;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 60%;
     font-size: 1.5em;
     padding: 10px 0;
+}
+
+.list__item--nav {
 }
 
 .list__item--nav a {
@@ -147,72 +155,88 @@ header {
 }
 
 /***** Intro *****/
-#intro {
-    margin-left: 30%;
-    position: relative;
-    left: -175px;
+#intro-wrapper {
     height: 500px;
+    display: flex;
+    justify-content: center;
 }
 
-.section__header--intro {
+.intro {
+    width: 662px;
+}
+
+.greeting {
     font-size: 3em;
-}
-
-.section__sub-header {
-    font-size: 4em;
     position: relative;
+}
+
+.name-title {
+    position: relative;
+    width: fit-content;
     left: 320px;
-    top: -10px;
-    color: white;
+    top: -74px;
+    z-index: 3;
 }
 
-.abstract-box {
-    width: 750px;
-    height: 4em;
-    position: absolute;
-    background-color: var(--accent-color-1);
-    left: 130px;
-    z-index: -5;
+.name {
+    font-size: 4em;
+    z-index: inherit;
 }
 
-.left-notch {
-    width: 2.3em;
-    height: 2.3em;
-    transform: rotate(45deg);
-    background-color: var(--dark-color);
-    position: absolute;
-    top: 65px;
-    left: 112px;
-    z-index: -4;
-}
-
-.right-notch {
-    width: 2.3em;
-    height: 2.3em;
-    transform: rotate(45deg);
-    background-color: var(--dark-color);
-    position: absolute;
-    top: 129px;
-    left: 862px;
-    z-index: -4;
-}
-
-.accent-info--header {
-    position: absolute;
-    top: 145px;
-    left: 520px;
-}
-
-.picture-of-me--wrapper {
-    position: absolute;
-    width: 300px;
-    top: 100px;
+.current-title {
+    font-size: 2em;
+    position: relative;
+    left: 20px;
+    z-index: inherit;
 }
 
 .picture-of-me {
+    width: 300px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
+    position: relative;
+    top: -170px;
+    z-index: 3;
 }
+
+.box-with-notches {
+    height: 4em;
+    position: relative;
+    left: -70px;
+    z-index: 2;
+}
+
+.abstract-box {
+    position: relative;
+    width: calc(100% + 100px);
+    height: 100%;
+    background-color: var(--accent-color-1);
+}
+
+.notch {
+    width: 2em;
+    height: 2em;
+    transform: rotate(45deg);
+    background-color: var(--dark-color);
+    position: relative;
+}
+
+.left-notch {
+    left: -1em;
+    top: -5em;
+}
+
+.right-notch {
+    left: calc(762px - 1em);
+    top: -3em;
+}
+
+.accent-info--header {
+    position: relative;
+}
+
+
 
 /****** about ******/
 #about {
