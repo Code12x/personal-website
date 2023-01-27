@@ -188,6 +188,7 @@ header {
     position: relative;
     left: 20px;
     z-index: inherit;
+    line-height: 60%;
 }
 
 .picture-of-me {
@@ -196,7 +197,7 @@ header {
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
     position: relative;
-    top: -170px;
+    top: -150px;
     z-index: 3;
 }
 
@@ -243,6 +244,15 @@ header {
     background-color: var(--light-color);
     color: var(--dark-color);
     overflow: hidden;
+    padding-left: 15%;
+}
+
+.about-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+    left: -5%;
 }
 
 .about__info-cluster {
@@ -252,7 +262,6 @@ header {
     margin: 0 15px 10px;
     border-radius: 5px;
     width: fit-content;
-    float: left;
 }
 
 .info-cluster__title::after {
