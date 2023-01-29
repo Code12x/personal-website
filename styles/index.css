@@ -249,6 +249,7 @@ header {
 
 .about-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
     position: relative;
@@ -262,6 +263,7 @@ header {
     margin: 0 15px 10px;
     border-radius: 5px;
     width: fit-content;
+    min-width: 300px;
 }
 
 .info-cluster__title::after {
@@ -330,12 +332,6 @@ header {
     padding-left: 50px;
 }
 
-@media (min-width: 600px) {
-    .my-fancy-quote--pt-2 {
-        padding-left: 175px;
-    }
-}
-
 .info__title {
     font-size: 2em;
     font-weight: 400;
@@ -349,6 +345,7 @@ header {
 /****** projects ******/
 .projects__list--wrapper {
     display: flex;
+    justify-content: center;
 }
 
 .projects__list {
@@ -356,7 +353,7 @@ header {
     width: fit-content;
     flex: 0 1 900px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 30px auto;
 }
 
@@ -393,8 +390,14 @@ header {
     background-attachment: fixed;
 }
 
+.blob-wrapper--ambition {
+    display: flex;
+    justify-content: center;
+}
+
 .blob__ambition {
-    width: 31%;
+    flex: 0 0 31%;
+    min-width: 272px;
 }
 
 /****** contact ******/
@@ -414,13 +417,90 @@ header {
 footer {
     color: white;
     padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
 }
 
-.footer-top {
-    display: flex;
-    justify-content: space-between;
+.footer-grid {
+
 }
 
-.copywrite {
-    text-align: center;
+.footer-grid-item-1 {
+    text-align: left;
+}
+
+.footer-grid-item-2 {
+    text-align: right;
+    color: white;
+}
+
+.footer-github {
+    color: white;
+}
+
+/****** mobile adjustments ******/
+@media screen and (max-width: 900px) {
+    .nav__list {
+        font-size: 1.1em;
+    }
+
+    #intro-wrapper {
+        height: auto;
+    }
+
+    .intro {
+        width: 300px;
+    }
+
+    .greeting {
+        position: static;
+        display: none;
+    }
+
+    .name-title {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        position: static;
+        text-align: center;
+        line-height: 1em;
+        height: 128px;
+        width: 200px;
+        margin: auto auto 8px;
+        background-color: var(--dark-color);
+    }
+
+    .name::before {
+        content: " ";
+        width: 208px;
+        height: 136px;
+        position: relative;
+        right: 4px;
+        bottom: 4px;
+        display: block;
+        z-index: -1;
+        background-image: linear-gradient(to right, var(--accent-color-3), var(--accent-color-2), var(--accent-color-3));
+    }
+
+    .name-name {
+        position: relative;
+        top: calc(-110%);
+    }
+
+    .current-title {
+        position: static;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .picture-of-me {
+        position: static;
+    }
+
+    .box-with-notches {
+        display: none;
+    }
 }
