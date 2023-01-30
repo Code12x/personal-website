@@ -17,6 +17,8 @@
             rel="stylesheet">
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -55,21 +57,10 @@
                     <p class="light-title info-cluster__title">Quick Info</p>
                     <ul class="list info-cluster__list">
                         <li class="list__item info-cluster__item"><strong class="light-accent-color">Age:</strong> 18</li>
-                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Location:</strong>
-                            Harrisburg,
-                            Pennsylvania</li>
-                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Degree:</strong>
-                            <em>Working on A.S. for Computer
-                                Software
-                                Engineering<br> from Thaddeus Stevens College of Technology</em>
-                        </li>
-                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Github:</strong> <a
-                            href="https://github.com/code12x" class="link-icon" target="_blank">Code12x</a>
-                        </li>
-                        <li class="list__item info-cluster__item">
-                            <strong class="light-accent-color">Resume:</strong> <a href="./assets/JustinKoch-Resume.pdf"
-                                target="_blank">JustinKoch-Resume.pdf</a>
-                        </li>
+                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Location:</strong> Harrisburg, Pennsylvania</li>
+                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Degree:</strong> <em>Working on A.S. for Computer Software Engineering<br> from Thaddeus Stevens College of Technology</em></li>
+                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Github:</strong> <a href="https://github.com/code12x" class="link-icon" target="_blank">Code12x</a></li>
+                        <li class="list__item info-cluster__item"><strong class="light-accent-color">Resume:</strong> <a href="./assets/JustinKoch-Resume.pdf" target="_blank">JustinKoch-Resume.pdf</a></li>
                     </ul> <!-- info-cluster__list -->
                 </div> <!-- about__info-cluster -->
 
@@ -78,33 +69,19 @@
                         <div class="abstract-circle abstract-circle-1"></div>
                         <div class="abstract-circle abstract-circle-2"></div>
                         <div class="abstract-circle abstract-circle-3"></div>
-                        <p class="my-fancy-quote my-fancy-quote--pt-1">I want to help people become more
-                            <strong>efficient</strong> at
-                            what
-                            they do
-                            by
-                            creating
-                        </p>
-                        <p class="my-fancy-quote my-fancy-quote--pt-2"><strong>effective</strong>
-                            solutions
-                            to their problems
-                            with my programs.</p>
+                        <p class="my-fancy-quote my-fancy-quote--pt-1">I want to help people become more <strong>efficient</strong> at what they do by creating</p>
+                        <p class="my-fancy-quote my-fancy-quote--pt-2"><strong>effective</strong> solutions to their problems with my programs.</p>
                     </div>
                     <p class="info__title">Activites & Interests</p>
                     <ul class="list info__list">
-                        <li class="list__item list__item--info">Learning new things</li>
-                        <li class="list__item list__item--info">Back end development</li>
-                        <li class="list__item list__item--info">Learning new programming languages (currently learning Rust)
-                        </li>
+                        <li class="list__item list__item--info">Programming</li>
                         <li class="list__item list__item--info">Open-source community</li>
                         <li class="list__item list__item--info">Linux (I use Pop!_OS btw)</li>
                         <li class="list__item list__item--info">Technical Minecraft</li>
-                        <li class="list__item list__item--info">The outdoors (hunting, trapping, four-wheeling, horse
-                            riding,
-                            hiking,
-                            etc.)</li>
+                        <li class="list__item list__item--info">The outdoors (hunting, trapping, four-wheeling, horse riding, hiking, etc.)</li>
+                        <li class="list__item list__item--info">Entrepreneurship</li>
                         <li class="list__item list__item--info">Recreational shooting</li>
-                        <li class="list__item list__item--info">Aviation!</li>
+                        <li class="list__item list__item--info">Aviation</li>
                     </ul> <!-- info__list -->
                 </div> <!-- about__info -->
 
@@ -113,65 +90,90 @@
 
         <section id="projects">
             <h2 class="section__header section__header--projects">Projects</h2>
-            <div class="projects__list--wrapper">
-                <ul class="list projects__list">
-                    <a href="https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/" target="_blank"
-                        class="list__item list__item--project">
-                        <li>
-                            <img src="./assets/images/worldtp_showcase.jpg" alt="WorldTP Showcase">
-                            <p class="light-title project__title">WorldTP</p>
-                            <p class="project__content">Status: Complete/updating</p>
-                            <p class="project__content">Language: Java</p>
-                            <p class="project__content">About:</p>
-                            <ul class="t2-list list__list">
-                                <li class="list__item t2-item">Minecraft Spigot server plugin that adds a GUI layer to
-                                    another
-                                    plugin.</li>
-                                <li class="list__item t2-item">Customizable plugin that is meant for any user
-                                    to
-                                    understand.</li>
-                            </ul> <!-- list__list -->
-                        </li> <!-- flex-aligner -->
-                    </a> <!-- list__item--project -->
 
-                    <span class="list__item list__item--project">
-                    <li>
-                        <!-- flex-aligner -->
-                        <img src="./assets/images/bloodhound.png" alt="Bloodhound">
-                        <p class="light-title project__title">Bloodhound</p>
-                        <p>Status: Incomplete/not finishing</p>
-                        <p>Language: Golang</p>
-                        <p>About:</p>
-                        <ul class="t2-list list__list">
-                            <li class="list__item t2-item">
-                                <p>A project that I did to learn more about the backend of web applications in a fun and
-                                    creative way.</p>
-                            </li> <!-- list__item -->
-                            <li class="list__item t2-item">
-                                <p>A collection of programs to find the IP of a certain player's Minecraft server.</p>
-                            </li> <!-- list__item -->
-                        </ul> <!-- list__list -->
-                    </li> <!-- flex-aligner -->
-                </span> <!-- list__item--project -->
-                </ul> <!-- projects__list -->
-            </div> <!-- projects__list--wrapper -->
+            <ul class="projects-inner">
+                <li class="project">
+                    <h2 class="project-name">WorldTP
+                        <button class="caret-btn">
+                            <ion-icon class="project-caret" name="caret-forward-outline"></ion-icon>
+                        </button>
+                    </h2>
+                    <ul class="project-details t1-list">
+                        <li>Status: Complete/not updating</li>
+                        <li>Language: Java</li>
+                        <li>About:</li>
+                        <ul class="t2-list">
+                            <li>Minecraft Spigot server plugin that adds a GUI layer to another plugin.</li>
+                            <li>Customizable plugin that is meant for any user to understand.</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul> <!-- projects-inner -->
+
+
+
+
+
+
+
+            <!-- <div class="projects__list--wrapper">
+            <!--     <ul class="list projects__list">
+            <!--         <a href="https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/" target="_blank"
+            <!--             class="list__item list__item--project">
+            <!--             <li>
+            <!--                 <img src="./assets/images/worldtp_showcase.jpg" alt="WorldTP Showcase">
+            <!--                 <p class="light-title project__title">WorldTP</p>
+            <!--                 <p class="project__content">Status: Complete/updating</p>
+            <!--                 <p class="project__content">Language: Java</p>
+            <!--                 <p class="project__content">About:</p>
+            <!--                 <ul class="t2-list list__list">
+            <!--                     <li class="list__item t2-item">Minecraft Spigot server plugin that adds a GUI layer to
+            <!--                         another
+            <!--                         plugin.</li>
+            <!--                     <li class="list__item t2-item">Customizable plugin that is meant for any user
+            <!--                         to
+            <!--                         understand.</li>
+            <!--                 </ul> <!-- list__list -->
+            <!--             </li> <!-- flex-aligner -->
+            <!--         </a> <!-- list__item--project -->
+
+            <!--         <span class="list__item list__item--project">
+            <!--         <li>
+            <!--             <!-- flex-aligner -->
+            <!--             <img src="./assets/images/bloodhound.png" alt="Bloodhound">
+            <!--             <p class="light-title project__title">Bloodhound</p>
+            <!--             <p>Status: Incomplete/not finishing</p>
+            <!--             <p>Language: Golang</p>
+            <!--             <p>About:</p>
+            <!--             <ul class="t2-list list__list">
+            <!--                 <li class="list__item t2-item">
+            <!--                     <p>A project that I did to learn more about the backend of web applications in a fun and
+            <!--                         creative way.</p>
+            <!--                 </li> <!-- list__item -->
+            <!--                 <li class="list__item t2-item">
+            <!--                     <p>A collection of programs to find the IP of a certain player's Minecraft server.</p>
+            <!--                 </li> <!-- list__item -->
+            <!--             </ul> <!-- list__list -->
+            <!--         </li> <!-- flex-aligner -->
+            <!--     </span> <!-- list__item--project -->
+            <!--     </ul> <!-- projects__list -->
+            <!-- </div> <!-- projects__list--wrapper -->
         </section> <!-- projects -->
 
         <section id="ambition">
             <h2 class="section__header section__header--ambition">Ambition</h2>
             <div class="blob-wrapper blob-wrapper--ambition">
                 <div class="blob blob__ambition">
-                    <h3 class="blob__title blob__title--ambition">To become a backend web developer</h3>
+                    <h3 class="blob__title blob__title--ambition">Backend Web Developer</h3>
                     <div class="blob__msg blob__msg--backend-dev">
-                        <p>Backend projects light me up with excitement as I try to solve problems in new ways.</p>
+                        <p>Backend projects light me up with excitement as I try to solve problems in new and efficient ways.</p>
                     </div> <!-- blob__msg--backend -->
                 </div> <!-- blob--ambition -->
 
                 <div class="blob blob__ambition">
-                    <h3 class="blob__title blob__title--ambition">To become an application developer</h3>
+                    <h3 class="blob__title blob__title--ambition">Embedded Software Developer</h3>
                     <div class="blob__msg blob__msg--sys-dev">
-                        <p>In more recent times, I've been increasingly interested in application development. More specifically, the
-                            backend of applicaitons (e.g., server software).</p>
+                        <p>Though I only have a small amount of experience with embedded software (Arduino robot that turned before hitting a wall), it sounds like it has some fun challenges.</p>
                     </div> <!-- blob__msg--sys-dev -->
                 </div> <!-- blob--ambition -->
             </div> <!-- blob-wrapper--ambition -->
@@ -194,6 +196,8 @@
                 <ion-icon class="small-icon footer-github" name="logo-github"></ion-icon>
             </a>
         </footer>
+
+        <script src="./scripts/index.js"></script>
     </body>
 
 </html>

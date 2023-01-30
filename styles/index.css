@@ -343,44 +343,38 @@ header {
 }
 
 /****** projects ******/
-.projects__list--wrapper {
-    display: flex;
-    justify-content: center;
+.projects-inner {
+    list-style: none;
 }
 
-.projects__list {
-    display: flex;
-    width: fit-content;
-    flex: 0 1 900px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px auto;
+.caret-btn {
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    display: inline;
+    transition: transform 250ms;
 }
 
-.list__item--project {
-    flex: 0 1 400px;
-    display: flex;
-    padding: 10px;
-    margin: 0 20px 25px;
-    box-shadow: 0 0 6px black;
-    transition: 500ms;
+.project-caret {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: inline;
 }
 
-.list__item--project:hover {
-    scale: 1.1;
+.project-details {
+    display: none;
 }
 
-.list__item--project img {
-    display: block;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px;
-    border: 2px solid black;
+.t1-list {
+    list-style-position: inside;
+    text-indent: var(--indent-size);
 }
 
-.project__title {
-    text-align: center;
+.t2-list {
+    list-style-position: inside;
+    text-indent: calc(2 * var(--indent-size));
 }
 
 /****** ambition ******/
