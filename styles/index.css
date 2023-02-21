@@ -347,24 +347,43 @@ header {
     list-style: none;
 }
 
+.project {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .project {
+        width: 100%;
+    }
+}
+
 .caret-btn {
     background-color: transparent;
     border: none;
-    height: 25px;
-    width: 25px;
-    display: inline;
-    transition: transform 250ms;
 }
 
-.project-caret {
-    height: 100%;
-    width: 100%;
+.project-name-caret {
+    display: flex;
+
+}
+
+.project-name {
     color: white;
     display: inline;
 }
 
-.project-details {
-    display: none;
+.project-caret {
+    height: 25px;
+    width: 25px;
+    color: white;
+    transition: transform 250ms;
+}
+
+.project-link {
+    text-decoration: underline;
+    color: darkgray;
 }
 
 .t1-list {

@@ -92,12 +92,13 @@
             <h2 class="section__header section__header--projects">Projects</h2>
 
             <ul class="projects-inner">
-                <li class="project">
-                    <h2 class="project-name">WorldTP
-                        <button class="caret-btn">
+                <li class="project" isExpanded="false">
+                    <button class="caret-btn" onclick="toggleDetails(this)">
+                        <div class="project-name-caret">
+                            <h2 class="project-name">WorldTP</h2>
                             <ion-icon class="project-caret" name="caret-forward-outline"></ion-icon>
-                        </button>
-                    </h2>
+                        </div>
+                    </button>
                     <ul class="project-details t1-list">
                         <li>Status: Complete/not updating</li>
                         <li>Language: Java</li>
@@ -105,59 +106,67 @@
                         <ul class="t2-list">
                             <li>Minecraft Spigot server plugin that adds a GUI layer to another plugin.</li>
                             <li>Customizable plugin that is meant for any user to understand.</li>
+                            <li>Over 3,500 downloads</li>
                         </ul>
+                        <li>Link: <a class="project-link" href="https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/" target="_blank">https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/</a></li>
+                    </ul>
+                </li>
+                <li class="project">
+                    <button class="caret-btn" onclick="toggleDetails(this)">
+                        <div class="project-name-caret">
+                            <h2 class="project-name">Bloodhound</h2>
+                            <ion-icon class="project-caret" name="caret-forward-outline"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="project-details t1-list">
+                        <li>Status: Not complete/Not finishing</li>
+                        <li>Language: Golang</li>
+                        <li>About:</li>
+                        <ul class="t2-list">
+                            <li>A project that I did to learn more about the backend of web applications in a fun and creative way.</li>
+                            <li>A collection of programs to find the server a minecraft account is logged into.</li>
+                        </ul>
+                        <li>Link: <a class="project-link" href="https://github.com/Code12x/bloodhound-programs" target="_blank">https://github.com/Code12x/bloodhound-programs</a></li>
+                    </ul>
+                </li>
+                <li class="project">
+                    <button class="caret-btn" onclick="toggleDetails(this)">
+                        <div class="project-name-caret">
+                            <h2 class="project-name">Code12Media</h2>
+                            <ion-icon class="project-caret" name="caret-forward-outline"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="project-details t1-list">
+                        <li>Status: Complete</li>
+                        <li>Language: Javascript</li>
+                        <li>About:</li>
+                        <ul class="t2-list">
+                            <li>A fullstack social media web app that I made following a YouTube tutorial</li>
+                            <li>MERN Stack</li>
+                        </ul>
+                        <li>Link: <a class="project-link" href="https://github.com/Code12x/MERN-Social-Media-App" target="_blank">https://github.com/Code12x/MERN-Social-Media-App</a></li>
+                    </ul>
+                </li>
+                <li class="project">
+                    <button class="caret-btn" onclick="toggleDetails(this)">
+                        <div class="project-name-caret">
+                            <h2 class="project-name">Warren's Truck Repair Website</h2>
+                            <ion-icon class="project-caret" name="caret-forward-outline"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="project-details t1-list">
+                        <li>Status: In-progress</li>
+                        <li>Language: HTML/CSS/JS</li>
+                        <li>About:</li>
+                        <ul class="t2-list">
+                            <li>A website for my grandfather's diesel truck shop</li>
+                            <li>Mostly vanilla html/css/js with a little bit of boostrap</li>
+                        </ul>
+                        <li>Link: not available yet</li>
                     </ul>
                 </li>
             </ul> <!-- projects-inner -->
-
-
-
-
-
-
-
-            <!-- <div class="projects__list--wrapper">
-            <!--     <ul class="list projects__list">
-            <!--         <a href="https://www.spigotmc.org/resources/worldtp-for-multiverse-1-17-1-19.94463/" target="_blank"
-            <!--             class="list__item list__item--project">
-            <!--             <li>
-            <!--                 <img src="./assets/images/worldtp_showcase.jpg" alt="WorldTP Showcase">
-            <!--                 <p class="light-title project__title">WorldTP</p>
-            <!--                 <p class="project__content">Status: Complete/updating</p>
-            <!--                 <p class="project__content">Language: Java</p>
-            <!--                 <p class="project__content">About:</p>
-            <!--                 <ul class="t2-list list__list">
-            <!--                     <li class="list__item t2-item">Minecraft Spigot server plugin that adds a GUI layer to
-            <!--                         another
-            <!--                         plugin.</li>
-            <!--                     <li class="list__item t2-item">Customizable plugin that is meant for any user
-            <!--                         to
-            <!--                         understand.</li>
-            <!--                 </ul> <!-- list__list -->
-            <!--             </li> <!-- flex-aligner -->
-            <!--         </a> <!-- list__item--project -->
-
-            <!--         <span class="list__item list__item--project">
-            <!--         <li>
-            <!--             <!-- flex-aligner -->
-            <!--             <img src="./assets/images/bloodhound.png" alt="Bloodhound">
-            <!--             <p class="light-title project__title">Bloodhound</p>
-            <!--             <p>Status: Incomplete/not finishing</p>
-            <!--             <p>Language: Golang</p>
-            <!--             <p>About:</p>
-            <!--             <ul class="t2-list list__list">
-            <!--                 <li class="list__item t2-item">
-            <!--                     <p>A project that I did to learn more about the backend of web applications in a fun and
-            <!--                         creative way.</p>
-            <!--                 </li> <!-- list__item -->
-            <!--                 <li class="list__item t2-item">
-            <!--                     <p>A collection of programs to find the IP of a certain player's Minecraft server.</p>
-            <!--                 </li> <!-- list__item -->
-            <!--             </ul> <!-- list__list -->
-            <!--         </li> <!-- flex-aligner -->
-            <!--     </span> <!-- list__item--project -->
-            <!--     </ul> <!-- projects__list -->
-            <!-- </div> <!-- projects__list--wrapper -->
+            </ul> <!-- projects-inner -->
         </section> <!-- projects -->
 
         <section id="ambition">
@@ -173,7 +182,7 @@
                 <div class="blob blob__ambition">
                     <h3 class="blob__title blob__title--ambition">Embedded Software Developer</h3>
                     <div class="blob__msg blob__msg--sys-dev">
-                        <p>Though I only have a small amount of experience with embedded software (Arduino robot that turned before hitting a wall), it sounds like it has some fun challenges.</p>
+                        <p>Though I only have a small amount of experience with embedded software (Arduino robot that turned before hitting a wall), it sounds like it has some fun challenges that I would be willing to tackle.</p>
                     </div> <!-- blob__msg--sys-dev -->
                 </div> <!-- blob--ambition -->
             </div> <!-- blob-wrapper--ambition -->
